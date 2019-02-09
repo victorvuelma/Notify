@@ -114,7 +114,7 @@ section p{
     align-items: center;
     
 }
-#features > div > div{
+.feature{
     width: 300px;
     
     display: flex;
@@ -123,19 +123,26 @@ section p{
     
     text-align: center;
 }
-#features h2{
+.feature h2{
     margin: 20px 0px;
 }
-#features p{
+.feature p{
     margin: 0;
 }
-#features img{
+.feature div{        
+    width: 110px;  
+    height: 110px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #2DCC70;
+    border-radius: 55px;
+}
+.feature img{
     width: 60px;
     height: 60px;
-    
-    padding: 30px;
-    background-color: #2DCC70;
-    border-radius: 60px;
 }
 
 /* NEWSLETTER */
