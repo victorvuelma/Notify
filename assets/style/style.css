@@ -79,6 +79,7 @@ header ul li{
     background-color:black;
     border-radius: 25px;
     opacity: 0.7;
+    transition: 0.5s;
 }
 header ul li:hover{
     opacity: 1;
