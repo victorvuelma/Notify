@@ -12,29 +12,29 @@ VERDE - #2DCC70
 header{
     width: 100%;
     height: 65vh;
-
+    
     display: grid;
     grid-template-areas: '. info . . .'
     '. info . img .';
     grid-template-rows: 7vh 58vh;
     grid-template-columns: 1fr 450px 100px 450px 1fr;
-
+    
     border-top: 10px solid #2DCC70;
-
+    
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 header img{
     height: 58vh;
-
+    
     grid-area: img;
 }
 
 /* HEADER - INFORMAÇÕES */
 header div{
     grid-area: info;
-        
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -47,7 +47,7 @@ header p{
 }
 header h1{
     margin: 0 0 8% 0;
-
+    
     font-family: 'Pacifico', cursive;
     font-size: 4em;
     font-weight: 400;
@@ -60,22 +60,22 @@ header h1::after{
 /* HEADER - LINKS */
 header ul{
     width: 200px;
-
+    
     display: flex;
     justify-content: space-between;
     
     padding: 0;
-
+    
     list-style: none;
 }
 header ul li{
     width: 50px;
     height: 50px;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     background-color:black;
     border-radius: 25px;
     opacity: 0.7;
@@ -88,4 +88,51 @@ header ul li:hover{
 header ul img{
     width: 30px;
     height: 30px;
+}
+
+section p{
+    color: #959595;
+}
+
+/* FEATURES */
+#features{
+    width: 100%;
+    height: 40vh;
+    
+    display: grid;
+    grid-template-areas: '. features .';
+    grid-template-columns: 1fr 1200px 1fr;
+}
+#features > div{
+    width: 100%;
+    
+    grid-area: features;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#features > div > div{
+    width: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+}
+#features h2{
+    margin: 20px 0px;
+}
+#features p{
+    margin: 0;
+}
+#features img{
+    width: 60px;
+    height: 60px;
+    
+    padding: 30px;
+    background-color: #2DCC70;
+    border-radius: 60px;
 }
