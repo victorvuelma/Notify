@@ -10,14 +10,14 @@ VERDE - #2DCC70
 
 /* HEADER */
 header{
-    width: 100vw;
+    width: 100%;
     height: 65vh;
 
     display: grid;
-    grid-template-areas: '. . . . .'
+    grid-template-areas: '. info . . .'
     '. info . img .';
     grid-template-rows: 7vh 58vh;
-    grid-template-columns: 1fr 400px 200px 400px 1fr;
+    grid-template-columns: 1fr 450px 100px 450px 1fr;
 
     border-top: 10px solid #2DCC70;
 
@@ -26,10 +26,11 @@ header{
     background-size: cover;
 }
 header img{
-    height: 100%;
+    height: 58vh;
 
     grid-area: img;
 }
+
 /* HEADER - INFORMAÇÕES */
 header div{
     grid-area: info;
@@ -42,9 +43,10 @@ header div{
 }
 header p{
     font-size: 1.5em;
+    margin: 0;
 }
 header h1{
-    margin: 0 0 3% 0;
+    margin: 0 0 8% 0;
 
     font-family: 'Pacifico', cursive;
     font-size: 4em;
@@ -54,6 +56,7 @@ header h1::after{
     content: ".";
     color: #2DCC70;
 }
+
 /* HEADER - LINKS */
 header ul{
     width: 200px;
@@ -72,7 +75,7 @@ header ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     background-color:black;
     border-radius: 25px;
     opacity: 0.7;
