@@ -244,7 +244,7 @@ section p{
     display: flex;    
     justify-content: space-between;
 }
-#people-box div{
+#people-box span{
     width: 42px;
     height: 42px;
     
@@ -254,7 +254,7 @@ section p{
 #people-box img{
     width: 100%;
 }
-#people-box div::after{
+#people-box span::after{
     height: 100%;
     width: 100%;
     top: 0;
@@ -267,13 +267,13 @@ section p{
     opacity: 0;
     transition: 0.5s;
 }
-#people-box div:hover::after{
+#people-box span:hover::after{
     opacity: 0.6;
     transition: 0.5s;
 }
 
-/* COLLORZILA <3 - Adiciona os efeitos de "fade" nas fotos das pontas*/
-#people-box div:first-child::before{
+/* COLORZILLA <3 - Adiciona os efeitos de "fade" nas fotos das pontas*/
+#people-box span:first-child::before{
     height: 100%;
     width: 100%;
     
@@ -285,7 +285,7 @@ section p{
     background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
 }
-#people-box div:last-child::before{
+#people-box span:last-child::before{
     height: 100%;
     width: 100%;
     
@@ -417,11 +417,11 @@ footer a:hover{
         justify-content: space-around;
         align-content: space-around;
     }
-    #people-box div{
+    #people-box span{
         width: 38px;
         height: 38px;
     }
-    #people-box div::before{
+    #people-box span::before{
         display: none;
     }
     #social{
@@ -469,7 +469,7 @@ footer a:hover{
     #people-box{
         width: 570px;
     }
-    #people-box div{
+    #people-box span{
         width: 26px;
         height: 26px;
     }
@@ -492,7 +492,7 @@ footer a:hover{
     #people-box{
         width: 768px;
     }
-    #people-box div{
+    #people-box span{
         width: 35px;
         height: 35px;
     }
