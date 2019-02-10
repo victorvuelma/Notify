@@ -26,7 +26,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-header div:nth-child(2){    
+header span{    
     grid-area: img;
     
     display: flex;
@@ -39,7 +39,7 @@ header img{
 }
 
 /* HEADER - INFORMAÇÕES */
-header div:nth-child(1){
+header div{
     grid-area: info;
     
     display: flex;
@@ -109,7 +109,7 @@ section p{
     grid-template-areas: '. features .';
     grid-template-columns: 1fr 1200px 1fr;
 }
-#features > div{
+#features div{
     width: 100%;
     
     grid-area: features;
@@ -134,7 +134,7 @@ section p{
 .feature p{
     margin: 0;
 }
-.feature div{        
+.feature span{        
     width: 110px;  
     height: 110px;
     
