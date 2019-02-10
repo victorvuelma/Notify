@@ -28,14 +28,19 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-header img{
-    height: 58vh;
-    
+header div:nth-child(2){    
     grid-area: img;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+header img{    
+    width: 100%;
 }
 
 /* HEADER - INFORMAÇÕES */
-header div{
+header div:nth-child(1){
     grid-area: info;
     
     display: flex;
@@ -174,7 +179,7 @@ section p{
     height: 52px;
 }
 #newsletter input{
-    width: 240px;
+    width: 60%;
     height: 50px;
     
     border: 1px solid #959595;
@@ -188,7 +193,7 @@ section p{
     font-size: 1.15em;
 }
 #newsletter button{
-    width: 120px;
+    width: 30%;
     height: 52px;
     
     border: none;
@@ -264,7 +269,7 @@ section p{
     transition: 0.5s;
 }
 #people-box div:hover::after{
-    opacity: 0.5;
+    opacity: 0.6;
     transition: 0.5s;
 }
 
@@ -365,4 +370,76 @@ footer a{
 }
 footer a:hover{
     color: #868686;
+}
+
+@media(max-width: 425px){
+    header{        
+        height: 750px;
+        grid-template-areas:
+        '. . .'
+        '. info .'
+        '. img .';
+        grid-template-rows: 50px 350px 350px;
+        grid-template-columns: 1fr 300px 1fr;
+    }
+    header div{
+        align-items: center;
+        text-align: center;
+    }
+    #features{        
+        grid-template-columns: 1fr 300px 1fr;
+        height: 800px;
+    }
+    #features > div{
+        flex-direction: column;
+    }
+    #newsletter{       
+        height: 520px; 
+
+        grid-template-areas: '. email .'
+        '. . .'
+        '. video .';
+        grid-template-columns: 1fr 300px 1fr;
+    }
+    #people {
+        height: 400px;
+    }
+    #people p{
+        width: 300px;
+        text-align: center;
+    }
+    #people-box{
+        width: 300px;
+        height: 150px;
+
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    #people-box div{
+        width: 38px;
+        height: 38px;
+    }
+    #people-box div::before{
+        display: none;
+    }
+    #social{
+        height: 250px;
+    }
+    #social p{
+        width: 300px;
+        text-align: center;
+    }
+    footer{
+        width: 100vw;
+        height: 200px;
+    }
+    footer ul{
+        width: 100vw;
+        
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
