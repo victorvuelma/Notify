@@ -18,7 +18,7 @@ header{
     
     display: grid;
     grid-template-areas: '. info . img .';
-    grid-template-columns: 1fr 450px 100px 450px 1fr;
+    grid-template-columns: 1fr 500px 200px 500px 1fr;
     
     border-top: 10px solid #2DCC70;
     
@@ -34,6 +34,7 @@ header div:nth-child(2){
     justify-content: center;
 }
 header img{    
+    max-height: 100%;
     width: 100%;
 }
 
@@ -156,7 +157,7 @@ section p{
     
     display: grid;
     grid-template-areas: '. email . video .';
-    grid-template-columns: 1fr 450px 100px 450px 1fr;
+    grid-template-columns: 1fr 500px 200px 500px 1fr;
     
     background-color: #E3E3E3;
 }
@@ -370,21 +371,22 @@ footer a:hover{
     color: #868686;
 }
 
-@media(max-width: 425px){
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
     header{        
         height: 750px;
         grid-template-areas:
         '. info .'
         '. img .';
-        grid-template-rows: 400px 350px;
-        grid-template-columns: 1fr 300px 1fr;
+        grid-template-rows: 350px 400px ;
+        grid-template-columns: 1fr 320px 1fr;
     }
     header div{
         align-items: center;
         text-align: center;
     }
     #features{        
-        grid-template-columns: 1fr 300px 1fr;
+        grid-template-columns: 1fr 320px 1fr;
         height: 800px;
     }
     #features > div{
@@ -397,13 +399,13 @@ footer a:hover{
         '. email .'
         '. . .'
         '. video .';
-        grid-template-columns: 1fr 300px 1fr;
+        grid-template-columns: 1fr 320px 1fr;
     }
     #people {
         height: 400px;
     }
     #people p{
-        width: 300px;
+        width: 320px;
         text-align: center;
     }
     #people-box{
@@ -426,18 +428,96 @@ footer a:hover{
         height: 250px;
     }
     #social p{
-        width: 300px;
+        width: 320px;
         text-align: center;
     }
     footer{
-        width: 100vw;
         height: 200px;
+
+        grid-template-columns: 0 100% 0;
     }
     footer ul{
-        width: 100vw;
+        display: flex;
         
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header{
+        height: 400px;
+        grid-template-columns: 1fr 235px 1fr 235px 1fr
+    }
+    #features{
+        grid-template-columns: 1fr 570px 1fr;
+    }
+    .feature{
+        width: 180px;
+    }
+    #newsletter {
+        height: 600px;
+        grid-template-areas: '. email .'
+                             '. video .';
+        grid-template-columns: 1fr 570px 1fr;
+    }
+    #people p{
+        width: 570px;
+    }
+    #people-box{
+        width: 570px;
+    }
+    #people-box div{
+        width: 26px;
+        height: 26px;
+    }
+    footer{
+        grid-template-columns: 1fr 100% 1fr;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    header{
+        grid-template-columns: 1fr 350px 50px 350px 1fr;
+    }
+    #features{
+        grid-template-columns: 1fr 760px 1fr;
+    }
+    #newsletter{
+        grid-template-columns: 1fr 350px 50px 350px 1fr;
+    }
+    #people-box{
+        width: 768px;
+    }
+    #people-box div{
+        width: 35px;
+        height: 35px;
+    }
+    footer{
+        grid-template-columns: 1fr 768px 1fr;
+    } 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    header{
+        grid-template-columns: 1fr 450px 50px 450px 1fr;
+    }
+    #features{
+        grid-template-columns: 1fr 950px 1fr;
+    }
+    #newsletter{
+        grid-template-columns: 1fr 450px 50px 450px 1fr;
+    }
+    #people-box{
+        width: 950px;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+ }
