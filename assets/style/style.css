@@ -17,9 +17,7 @@ header{
     height: 65vh;
     
     display: grid;
-    grid-template-areas: '. info . . .'
-    '. info . img .';
-    grid-template-rows: 7vh 58vh;
+    grid-template-areas: '. info . img .';
     grid-template-columns: 1fr 450px 100px 450px 1fr;
     
     border-top: 10px solid #2DCC70;
@@ -376,10 +374,9 @@ footer a:hover{
     header{        
         height: 750px;
         grid-template-areas:
-        '. . .'
         '. info .'
         '. img .';
-        grid-template-rows: 50px 350px 350px;
+        grid-template-rows: 400px 350px;
         grid-template-columns: 1fr 300px 1fr;
     }
     header div{
@@ -395,8 +392,9 @@ footer a:hover{
     }
     #newsletter{       
         height: 520px; 
-
-        grid-template-areas: '. email .'
+        
+        grid-template-areas: 
+        '. email .'
         '. . .'
         '. video .';
         grid-template-columns: 1fr 300px 1fr;
@@ -411,9 +409,9 @@ footer a:hover{
     #people-box{
         width: 300px;
         height: 150px;
-
+        
         flex-wrap: wrap;
-
+        
         justify-content: space-around;
         align-content: space-around;
     }
