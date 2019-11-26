@@ -85,6 +85,7 @@ header ul li{
     border-radius: 25px;
     opacity: 0.7;
     transition: 0.5s;
+    cursor: pointer;
 }
 header ul li:hover{
     opacity: 1;
@@ -206,6 +207,8 @@ section p{
     
     font-size: 1.15em;
     font-weight: bold;
+
+    cursor: pointer;
 }
 #newsletter button:hover{
     background-color: #28b764;
@@ -249,7 +252,6 @@ section p{
     height: 42px;
     
     position: relative;
-    cursor: pointer;
 }
 #people-box img{
     width: 100%;
@@ -331,6 +333,8 @@ section p{
     border-radius: 25px;
     opacity: 0.7;
     transition: 0.5s;
+
+    cursor: pointer;
 }
 #social li:hover{
     background-color: #28b764;
